@@ -1,0 +1,6 @@
+[plugin]
+name = "dokku-docker-restart-policy"
+description = "Injects --restart=on-failure[:10] docker run option on dokku deploy phase"
+version = "0.1.0"
+website_url = "https://github.com/michaelshobbs/dokku-docker-restart-policy"
+[plugin.config]

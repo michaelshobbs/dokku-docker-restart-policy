@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
+
+dokku-docker-restart-policy-deploy-trigger() {
+  local APP="$1"; local IMAGE_SOURCE_TYPE="$2"
+  local STDIN=$(cat)
+
+  echo -n "$STDIN --restart=on-failure:10"
+
+}
+
+dokku-docker-restart-policy-deploy-trigger "$@"
