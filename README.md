@@ -1,5 +1,7 @@
 # dokku-docker-restart-policy [![Build Status](https://img.shields.io/circleci/project/michaelshobbs/dokku-docker-restart-policy.svg?branch=master "Build Status")](https://circleci.com/gh/michaelshobbs/dokku-docker-restart-policy/tree/master)
 
+> Deprecated as of Dokku 0.7.0, which has [restart policy handling](http://dokku.viewdocs.io/dokku/deployment/process-management/#restart-policies) built in.
+
 Injects restart policy on [dokku](https://github.com/dokku/dokku) deploy phase
 
 Currently just sets `--restart=on-failure[:10]`.
